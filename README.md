@@ -5,10 +5,11 @@ This repository contains a comprehensive analysis of Amazon product review data.
 ## Table of Contents
 
 1. [Introduction](#introduction)
-2. [Dataset](#dataset)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Analysis Steps](#analysis-steps)
+2. [Objective](#objective)
+3. [Dataset](#dataset)
+4. [Installation](#installation)
+5. [Usage](#usage)
+6. [Analysis Steps](#analysis-steps)
    - [1. Reading Data from SQLite Database](#1-reading-data-from-sqlite-database)
    - [2. Data Preparation](#2-data-preparation)
    - [3. User Recommendation Analysis](#3-user-recommendation-analysis)
@@ -16,14 +17,22 @@ This repository contains a comprehensive analysis of Amazon product review data.
    - [5. Viewer Behavior Analysis](#5-viewer-behavior-analysis)
    - [6. Verbosity Analysis](#6-verbosity-analysis)
    - [7. Sentiment Analysis](#7-sentiment-analysis)
-6. [Visualizations](#visualizations)
-7. [Conclusion](#conclusion)
-8. [Contributing](#contributing)
-9. [License](#license)
+7. [Visualizations](#visualizations)
+8. [Conclusion](#conclusion)
 
 ## Introduction
 
 This project aims to analyze Amazon product reviews to gain insights into user behavior, product popularity, and review sentiments. The dataset includes features such as user and product IDs, review texts, helpfulness metrics, and ratings.
+
+## Objective
+The primary objectives of this analysis are:
+
+- Data Preparation: Clean and prepare the data for analysis.
+- User Recommendation Analysis: Identify users who are likely to purchase more products based on their review activity.
+- Popular Products Analysis: Determine which products are most frequently reviewed and identify the products with the highest number of reviews.
+- Viewer Behavior Analysis: Compare the behaviors of frequent and non-frequent reviewers to understand differences in review patterns and ratings.
+- Verbosity Analysis: Analyze the verbosity of reviews to see if frequent reviewers tend to write longer reviews.
+- Sentiment Analysis: Perform sentiment analysis on review summaries to determine the overall sentiment expressed in the reviews.
 
 ## Dataset
 
@@ -41,21 +50,6 @@ The dataset used in this analysis is stored in a SQLite database named `database
 - `Text`: Text of the review
 
 The dataset is available [here](https://drive.google.com/drive/folders/1mQzRTzBkXK21XkXsqShm8-KATZ9ojb5k?usp=sharing).
-
-## Installation
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/amazon-reviews-analysis.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd amazon-reviews-analysis
-   ```
-3. Install the required packages:
-   ```sh
-   pip install -r requirements.txt
-   ```
 
 ## Usage
 
@@ -124,12 +118,5 @@ The analysis provides insights into various aspects of the dataset, including:
 - Analyzing verbosity among reviewers.
 - Performing sentiment analysis to understand the general sentiment expressed in reviews.
 
-These insights can help Amazon improve their recommendation systems, understand customer behavior, and enhance customer satisfaction.
+The analysis of Amazon product reviews has yielded several valuable insights. By identifying the top users who are most likely to purchase more products, we can enhance personalized marketing strategies and improve product recommendations. The analysis of popular products has provided an understanding of market trends and consumer preferences, which can guide inventory and sales strategies. The comparison between frequent and non-frequent reviewers revealed that frequent reviewers tend to give more moderate and detailed reviews, suggesting they are more discerning and possibly more reliable. Additionally, the sentiment analysis of review summaries has highlighted overall customer satisfaction and pinpointed areas for improvement. These insights collectively can help Amazon optimize their recommendation systems, better understand customer behavior, and ultimately enhance customer satisfaction and loyalty.
 
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or additions.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
